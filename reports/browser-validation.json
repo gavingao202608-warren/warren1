@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-09T13:58:26.823Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "horizontal_overflow": false,
+  "media_responses": 13,
+  "media_failures": [],
+  "question_saved": true,
+  "transport_note": "Dealer media fetched with Node platform CA and proxy; Chromium TLS verification was not disabled. This is a local renderer/form test, not public mobile latency proof."
+}

@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-10-09T14:12:58.906Z",
+  "inventory_count": 21,
+  "checks": [
+    {
+      "name": "Googlebot, Bingbot and OAI-SearchBot see server-rendered vehicle facts",
+      "status": "PASS"
+    },
+    {
+      "name": "Vehicle and inquiry values are persisted in the current SQLite database",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-origin inquiry and tracking submissions are refused",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown vehicle and invalid consent are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Tracking preserves first source across internal landing changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Public feeds omit unavailable inventory and include stable URLs",
+      "status": "PASS"
+    },
+    {
+      "name": "Source parameter works on ask; no account or compulsory contact",
+      "status": "PASS"
+    },
+    {
+      "name": "No exact match is clearly labeled in initial search HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin requires signed authentication; dashboard displays real counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin login throttles repeated failures",
+      "status": "PASS"
+    }
+  ]
+}

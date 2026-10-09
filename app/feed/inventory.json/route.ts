@@ -1,0 +1,1 @@
+import {vehicles} from '@/lib/db';import {jsonFeed} from '@/lib/feed';import {publicResponse} from '@/lib/http';export const dynamic='force-dynamic';export async function GET(req:Request){return publicResponse(req,jsonFeed(vehicles(true)));}

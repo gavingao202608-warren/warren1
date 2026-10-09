@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-08T22:54:34.980Z",
+  "http_status": 303,
+  "sync": {
+    "started_at": "2026-10-08T22:53:51.733Z",
+    "finished_at": "2026-10-08T22:54:34.976Z",
+    "status": "success",
+    "count": 21,
+    "error": null
+  }
+}

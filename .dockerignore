@@ -1,0 +1,9 @@
+.git
+node_modules
+.next
+.env*
+reports
+data/*.sqlite*
+data/sync.lock
+data/source-inspection
+*.tsbuildinfo

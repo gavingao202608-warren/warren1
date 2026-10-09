@@ -1,0 +1,40 @@
+{
+  "name": "ultimate-discovery-gateway",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build --webpack",
+    "start": "next start --hostname 0.0.0.0",
+    "sync-inventory": "tsx --import ./scripts/load-env.mjs scripts/sync.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "check": "tsc --noEmit",
+    "acceptance": "tsx --import ./scripts/load-env.mjs scripts/acceptance.ts",
+    "init": "tsx --import ./scripts/load-env.mjs scripts/init.ts",
+    "predev": "npm run init",
+    "prestart": "npm run init",
+    "test:integration": "tsx --import ./scripts/load-env.mjs scripts/integration.ts"
+  },
+  "dependencies": {
+    "cheerio": "1.2.0",
+    "next": "16.4.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "robots-parser": "^3.0.1",
+    "undici": "^8.11.2",
+    "@next/env": "16.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "type": "module"
+}

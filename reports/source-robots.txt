@@ -1,0 +1,26 @@
+Sitemap: https://www.ultimatemotor.ca/sitemap.xml
+
+User-agent: AffiliateLabz
+User-agent: AhrefsBot
+User-agent: AspiegelBot
+User-agent: coccocbot
+User-agent: IAS crawler
+User-agent: MJ12bot
+User-agent: seewithkids.com
+User-agent: SemrushBot/6~bl
+User-agent: TTD-Content
+User-agent: YandexBot
+User-agent: PetalBot
+User-agent: DotBot
+Disallow: /
+
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+# ---------------------------
+# END YOAST BLOCK

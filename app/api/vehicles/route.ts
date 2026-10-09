@@ -1,0 +1,1 @@
+import {vehicles} from '@/lib/db';import {search} from '@/lib/search';import {publicResponse} from '@/lib/http';export const dynamic='force-dynamic';export async function GET(req:Request){const q=new URL(req.url).searchParams.get('q');return publicResponse(req,q?search(vehicles(true),q.slice(0,200)): {vehicles:vehicles(true)});}

@@ -1,0 +1,1 @@
+import {vehicle} from '@/lib/db';import {publicResponse} from '@/lib/http';export const dynamic='force-dynamic';export async function GET(req:Request,{params}:{params:Promise<{stock:string}>}){const v=vehicle((await params).stock);return v?publicResponse(req,v):Response.json({error:'Not found'},{status:404});}

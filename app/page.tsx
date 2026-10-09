@@ -1,0 +1,2 @@
+import {vehicles} from '@/lib/db';import {Cards,SearchBox,Empty} from './components';
+export const dynamic='force-dynamic';export default function Home(){const items=vehicles(true);return <><p className="muted">PUBLIC VEHICLE DISCOVERY · ONTARIO</p><h1>Find a Used Vehicle</h1><p>Search source-linked inventory. See the facts. Ask without signing up.</p><SearchBox/><h2>Current inventory</h2>{items.length?<Cards items={items.slice(0,9)}/>:<Empty/>}<p><a href="/inventory">View all inventory →</a></p></>}

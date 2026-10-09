@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-09T14:13:00.158Z",
+  "base": "http://localhost:3000",
+  "source_vehicles": 21,
+  "results": [
+    {
+      "test": "A — Source ingestion",
+      "status": "PASS",
+      "detail": "21 source vehicles"
+    },
+    {
+      "test": "B — Crawler initial HTML",
+      "status": "PASS",
+      "detail": "21 vehicle pages contain initial HTML facts"
+    },
+    {
+      "test": "C — Structured data",
+      "status": "PASS",
+      "detail": "All imported pages parse"
+    },
+    {
+      "test": "D — Feed/API",
+      "status": "PASS",
+      "detail": "JSON, CSV and API agree; 21 vehicles (empty is not ingestion validation)"
+    },
+    {
+      "test": "E — Search",
+      "status": "PASS",
+      "detail": "Four searches return actual imported vehicles; closest results labeled"
+    },
+    {
+      "test": "F — Anonymous inquiry",
+      "status": "PASS",
+      "detail": "Anonymous inquiry created: d2cf8f38-eca1-42ad-9a8a-2323d5e8b7e4"
+    },
+    {
+      "test": "Robots/sitemap",
+      "status": "PASS",
+      "detail": "Public crawl directives and dynamic sitemap respond"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+services:
+  gateway:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:?Set the actual public HTTPS origin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set a long private password}
+      ACQUISITION_STARTED_AT: ${ACQUISITION_STARTED_AT:?Set the experiment start timestamp in UTC}
+      DATABASE_PATH: /data/inventory.sqlite
+    volumes:
+      - inventory-data:/data
+    restart: unless-stopped
+volumes:
+  inventory-data:

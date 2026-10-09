@@ -1,0 +1,46 @@
+
+> ultimate-discovery-gateway@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ vehicle parser reads source structured facts (15.173736ms)
+✔ price parser rejects finance, missing, negative and malformed prices (0.517071ms)
+✔ mileage parser handles km without silently treating miles as km (0.249908ms)
+✔ stock/VIN parsing validates VIN characters (0.22246ms)
+✔ parser leaves absent fields unknown (2.798604ms)
+✔ parser rejects listing and unrelated product pages (1.541087ms)
+✔ parser reads table specifications and explicit availability (3.216233ms)
+✔ non-CAD price is not advertised as CAD (1.923855ms)
+✔ unsafe image URLs are discarded (1.384791ms)
+✔ search parses year, model, trim, drive, budget and mileage (1.535671ms)
+✔ requested searches return actual supplied inventory or labeled closest results (0.90833ms)
+✔ unknown price and mileage cannot satisfy numeric constraints (0.155187ms)
+✔ JSON feed includes only available inventory and source URLs (0.278357ms)
+✔ CSV quotes fields, retains zero, and mitigates spreadsheet formulas (0.332261ms)
+✔ vehicle structured data parses and omits nonexistent accident facts (0.462248ms)
+✔ sitemap includes available VDPs, excludes missing and sold (0.303694ms)
+✔ inventory add/update preserves last_seen and updates changed facts (0.942194ms)
+✔ inquiry save records anonymous vehicle/source/question/timestamp (1.12408ms)
+✔ inquiry validation rejects unknown vehicle and unconsented contact (0.416022ms)
+✔ partial and failed sync cannot remove inventory (0.458698ms)
+✔ three complete missing observations mark unavailable and reappearance restores (0.818744ms)
+✔ missing evidence set protects inventory omitted by discovery (0.36399ms)
+✔ sync failure logs error and keeps previously valid database (9.003727ms)
+✔ source HTTP accepts only authorized HTTPS hosts (0.2095ms)
+✔ tracking recognizes explicit UTM and trusted referrer hostname (0.36738ms)
+✔ admin disabled without password; tampering and expiry fail (0.830957ms)
+✔ rate limit and same-origin check block abuse (1.93757ms)
+✔ public Zop adapter maps visible facts and nullable history (5.714963ms)
+✔ drivetrain aliases from real source vocabulary match AWD searches (0.319516ms)
+✔ published search configuration is parsed as data, never evaluated (0.518131ms)
+✔ same-origin validation honors the actual HTTP host through Next binding (0.374439ms)
+✔ JSON-LD serializer prevents closing script injection and preserves JSON data (0.457505ms)
+✔ request decoder rejects oversized and non-JSON bodies (5.500418ms)
+✔ search normalizes source body style vocabulary and does not mistake five-digit budget for year (0.176704ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 716.079765

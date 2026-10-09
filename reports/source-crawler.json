@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-08T22:56:36.103Z",
+  "findings": [
+    {
+      "agent": "Googlebot",
+      "http_status": 200,
+      "source_url": "https://www.ultimatemotor.ca/inventory/2014-subaru-impreza-2-0i-premium/155/",
+      "has_car_jsonld": true,
+      "has_source_vin": true,
+      "price_cad": 9299
+    },
+    {
+      "agent": "Bingbot",
+      "http_status": 200,
+      "source_url": "https://www.ultimatemotor.ca/inventory/2014-subaru-impreza-2-0i-premium/155/",
+      "has_car_jsonld": true,
+      "has_source_vin": true,
+      "price_cad": 9299
+    },
+    {
+      "agent": "OAI-SearchBot",
+      "http_status": 200,
+      "source_url": "https://www.ultimatemotor.ca/inventory/2014-subaru-impreza-2-0i-premium/155/",
+      "has_car_jsonld": true,
+      "has_source_vin": true,
+      "price_cad": 9299
+    }
+  ]
+}
