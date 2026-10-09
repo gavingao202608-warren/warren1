@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-09T16:14:30.388Z",
+  "url": "https://warren-vehicle-finder.onrender.com",
+  "invalid_inquiries_rejected_without_creating_leads": [
+    {
+      "status": 400,
+      "error": "Invalid input: expected boolean, received string"
+    },
+    {
+      "status": 400,
+      "error": "Please enter a valid email address"
+    },
+    {
+      "status": 400,
+      "error": "Unrecognized key: \"is_test\""
+    }
+  ],
+  "public_fuzzy_search": true,
+  "numeric_constraints_respected": true,
+  "inquiry_contact_legend": true,
+  "scope": "Read-only pages/search plus intentionally rejected requests; no successful public test inquiry was created"
+}
