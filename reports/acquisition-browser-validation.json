@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-09T17:00:20.282Z",
+  "scope": "local real Chromium mobile functional checks, no inquiry submission",
+  "checks": {
+    "default_hst": true,
+    "no_false_under_budget": true,
+    "mobile_no_overflow": true,
+    "budget_question_preserved": true,
+    "comparison_intake_prefilled": true,
+    "optional_contact_visible": true
+  },
+  "status": "PASS"
+}

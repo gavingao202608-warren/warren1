@@ -1,0 +1,55 @@
+
+> warren-vehicle-finder@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ Ontario listing example makes tax and entered costs explicit (1.683221ms)
+✔ backward allowance stays within budget, with optional and licensing costs (0.39741ms)
+✔ invalid amounts cannot produce plausible budget results (0.448265ms)
+✔ vehicle parser reads source structured facts (9.259557ms)
+✔ price parser rejects finance, missing, negative and malformed prices (0.633036ms)
+✔ mileage parser handles km without silently treating miles as km (0.22232ms)
+✔ stock/VIN parsing validates VIN characters (0.192241ms)
+✔ parser leaves absent fields unknown (2.241337ms)
+✔ parser rejects listing and unrelated product pages (1.275827ms)
+✔ parser reads table specifications and explicit availability (2.61263ms)
+✔ non-CAD price is not advertised as CAD (1.1629ms)
+✔ unsafe image URLs are discarded (0.858352ms)
+✔ search parses year, model, trim, drive, budget and mileage (1.33878ms)
+✔ requested searches return actual supplied inventory or labeled closest results (2.989662ms)
+✔ unknown price and mileage cannot satisfy numeric constraints (0.216704ms)
+✔ JSON feed includes only available inventory and source URLs (0.514908ms)
+✔ CSV quotes fields, retains zero, and mitigates spreadsheet formulas (0.310933ms)
+✔ vehicle structured data parses and omits nonexistent accident facts (0.659338ms)
+✔ sitemap includes available VDPs, excludes missing and sold (0.151385ms)
+✔ inventory add/update preserves last_seen and updates changed facts (2.631638ms)
+✔ inquiry save records anonymous vehicle/source/question/timestamp (22.996383ms)
+✔ inquiry validation rejects unknown vehicle and unconsented contact (2.162303ms)
+✔ partial and failed sync cannot remove inventory (0.619506ms)
+✔ three complete missing observations mark unavailable and reappearance restores (0.519864ms)
+✔ missing evidence set protects inventory omitted by discovery (0.279287ms)
+✔ sync failure logs error and keeps previously valid database (7.927665ms)
+✔ source HTTP accepts only authorized HTTPS hosts (0.147822ms)
+✔ tracking recognizes explicit UTM and trusted referrer hostname (0.593754ms)
+✔ admin disabled without password; tampering and expiry fail (0.685335ms)
+✔ rate limit and same-origin check block abuse (1.940556ms)
+✔ public Zop adapter maps visible facts and nullable history (4.462261ms)
+✔ drivetrain aliases from real source vocabulary match AWD searches (0.304839ms)
+✔ published search configuration is parsed as data, never evaluated (0.462006ms)
+✔ same-origin validation honors the actual HTTP host through Next binding (0.370941ms)
+✔ JSON-LD serializer prevents closing script injection and preserves JSON data (0.253593ms)
+✔ request decoder rejects oversized and non-JSON bodies (3.973312ms)
+✔ search normalizes source body style vocabulary and does not mistake five-digit budget for year (0.280368ms)
+✔ source attribution rejects spoofed Google domains and recognizes Copilot (0.287431ms)
+✔ qualified leads require a real consented contact and exclude controlled tests (0.110919ms)
+✔ hosted canonical base uses the actual Render URL and allows an explicit custom domain (0.083607ms)
+✔ open-source fuzzy search handles spelling mistakes without relaxing numeric filters (0.536545ms)
+✔ inquiry schema rejects forged consent, malformed contacts, and validation flags (3.622077ms)
+✔ IndexNow submits only owned public URLs, never the source dealer site (0.640316ms)
+ℹ tests 43
+ℹ suites 0
+ℹ pass 43
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 590.852064

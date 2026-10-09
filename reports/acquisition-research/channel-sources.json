@@ -1,0 +1,114 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "i": 0,
+      "url": "https://www.51.ca/service/categories/auto-dealer-agent-services",
+      "final_url": "https://www.51.ca/service/categories/auto-dealer-agent-services",
+      "status": 200,
+      "title": "购车服务 - 服务黄页 - 加国无忧",
+      "length": 268,
+      "excerpt": "购车服务 购车服务 共 3 条 【AAA车友会】多伦多最大的华人二手车行， 二手车销售 647-633-3299 Nathan 英语/国语 #1 在线咨询 拨打电话 收藏 Cyber Motor動力車行,現金高價收購任何年份汽車 现金收车 416-450-1323 Eddy Yiu 英语/国语/粤语 #2 在线咨询 拨打电话 收藏 買車代理 - 48 小時內為您汽車找到最高價 二手车回收 416-939-4829 Dan 国语/粤语 #3 在线咨询 拨打电话 收藏 没有找到符合条件的黄页信息 我要展示广告信息在列表里 发布黄页信息",
+      "links": [
+        {
+          "title": "未登录\n                            登录后体验完整功能",
+          "url": "https://www.51.ca/service/sso/auth/login?from=https%3A%2F%2Fwww.51.ca%2Fservice%2Fcategories%2Fauto-dealer-agent-services"
+        },
+        {
+          "title": "收藏的汽车",
+          "url": "https://www.51.ca/autos/my/collection?from=touch_sidebar"
+        },
+        {
+          "title": "发布的汽车",
+          "url": "https://www.51.ca/autos/my/manage?from=touch_sidebar"
+        },
+        {
+          "title": "汽车",
+          "url": "https://www.51.ca/autos?from=touch_sidebar"
+        },
+        {
+          "title": "购车服务",
+          "url": "https://www.51.ca/service/categories/auto-dealer-agent-services"
+        },
+        {
+          "title": "【AAA车友会】多伦多最大的华人二手车行，\n            \n            \n            \n                \n                                          ",
+          "url": "https://www.51.ca/service/categories/auto-dealer-agent-services/posts/182668?wyacs=yp-category-list"
+        },
+        {
+          "title": "Cyber Motor動力車行,現金高價收購任何年份汽車\n            \n            \n            \n                \n                                   ",
+          "url": "https://www.51.ca/service/categories/auto-dealer-agent-services/posts/248068?wyacs=yp-category-list"
+        },
+        {
+          "title": "買車代理 - 48 小時內為您汽車找到最高價\n            \n            \n            \n                \n                                         ",
+          "url": "https://www.51.ca/service/categories/auto-dealer-agent-services/posts/237693?wyacs=yp-category-list"
+        }
+      ]
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "i": 1,
+      "url": "https://www.51.ca/service/categories/driving-training",
+      "final_url": "https://www.51.ca/service/categories/driving-training",
+      "status": 404,
+      "title": "Not Found",
+      "length": 13,
+      "excerpt": "404 Not Found",
+      "links": []
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "i": 2,
+      "url": "https://help.51.ca/",
+      "final_url": "https://help.51.ca/",
+      "status": 200,
+      "title": "首页 - 51帮助站",
+      "length": 571,
+      "excerpt": "查看繁体版 | 加入收藏 | 加国无忧APP 主站 资讯 找房 工作 黄页 集市 汽车 美食 留学 搜索 在线客服 如何发布黄页广告？ 黄页广告是如何排名的？ 如何更改我的个人资料信息？ 黄页广告如何付费？（价格介绍） 黄页商家如何查询在线获客？ 如何修改租房“付费提前”广告的每日提前时间？ 如何发布视频？增加曝光量！ 如何购买租房橱窗广告？ 上传的图片颠倒了，如何修改？ 如何提高出租房源排名？ 如何发布租房信息？ 如何修改商家资料 如何申请成为认证商家？ 如何付费推广您的招聘信息 如何编辑我发布的信息？ 如何发布招聘信息？ 如何编辑商家信息？ 认证商户页面如何上线？ 如何成为51商家 如何推广您的车辆广告信息？ 如何删除或下架您的个人物品信息 如何编辑管理您的个人物品信息 如何发布物品信息",
+      "links": [
+        {
+          "title": "汽车",
+          "url": "https://www.51.ca/autos"
+        }
+      ]
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "i": 3,
+      "url": "https://car.yorkbbs.ca/",
+      "final_url": "https://car.yorkbbs.ca/",
+      "status": 200,
+      "title": "多伦多汽车 - 约克论坛 - 加拿大第一中文网",
+      "length": 159,
+      "excerpt": "<strong>不支持</strong><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-P5Z4CLL\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>",
+      "links": []
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "i": 4,
+      "url": "https://www.facebook.com/groups/newcomersintoronto/about/",
+      "final_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fnewcomersintoronto%2Fabout%2F",
+      "status": 200,
+      "title": "Facebook",
+      "length": 613,
+      "excerpt": "<meta http-equiv=\"refresh\" content=\"0; URL=/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fnewcomersintoronto%2Fabout%2F&amp;_fb_noscript=1\" /> Explore the things you love.Log into FacebookEmail or mobile numberPasswordLog inForgot password?Create new account English (US)EspañolFrançais (France)中文(简体)العربيةPortuguês (Brasil)ItalianoMore lan",
+      "links": [
+        {
+          "title": "Create ad",
+          "url": "https://www.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto"
+        },
+        {
+          "title": "Careers",
+          "url": "https://www.facebook.com/careers/?ref=pf"
+        }
+      ]
+    }
+  }
+]

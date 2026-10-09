@@ -1,1 +1,1 @@
-import {vehicles} from '@/lib/db';import {sitemapEntries} from '@/lib/feed';export const dynamic='force-dynamic';export default function sitemap(){return sitemapEntries(vehicles(true));}
+import {base} from '@/lib/model';import {vehicles} from '@/lib/db';import {sitemapEntries} from '@/lib/feed';export const dynamic='force-dynamic';export default function sitemap(){return [...sitemapEntries(vehicles(true)),...['/budget','/compare','/guides/ontario-car-price'].map(path=>({url:base()+path,lastModified:new Date('2026-10-09T00:00:00Z')}))];}

@@ -12,7 +12,7 @@ export function sameOrigin(req:Request){
  return new URL(origin).origin===new URL(protocol+'://'+host).origin;
  }catch{return false;}
 }
-export const sources=['google','bing','chatgpt','copilot','muse','facebook','instagram','xiaohongshu','autotrader','direct','unknown'];
+export const sources=['google','bing','chatgpt','copilot','muse','facebook','instagram','xiaohongshu','autotrader','51','yorkbbs','wechat','partner','reddit','youtube','tiktok','craigslist','kijiji','direct','unknown'];
 export function sourceFrom(url:URL,referrer=''){const explicit=url.searchParams.get('source')||url.searchParams.get('utm_source');if(explicit)return sources.includes(explicit.toLowerCase())?explicit.toLowerCase():'unknown';if(!referrer)return 'direct';let host='';try{host=new URL(referrer).hostname;}catch{return 'unknown';}if(/(^|\.)google\.(com|ca|co\.uk|com\.au|de|fr|co\.jp|co\.in)$/.test(host))return 'google';if(host==='copilot.microsoft.com')return 'copilot';if(host==='chat.openai.com')return 'chatgpt';for(const name of ['bing','chatgpt','copilot','facebook','instagram','autotrader'])if(host===name+'.com'||host.endsWith('.'+name+'.com'))return name;return 'unknown';}
 
 export function validationToken(){return createHmac('sha256',process.env.ADMIN_PASSWORD||'disabled').update('controlled-validation').digest('hex');}

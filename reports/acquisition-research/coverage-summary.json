@@ -1,0 +1,35 @@
+{
+  "researched_at": "2026-10-09",
+  "files": {
+    "sources": {
+      "attempted": 18,
+      "http200": 11,
+      "errors_or_other_status": 7
+    },
+    "deep-sources": {
+      "attempted": 17,
+      "http200": 15,
+      "errors_or_other_status": 2
+    },
+    "extra-sources": {
+      "attempted": 9,
+      "http200": 9,
+      "errors_or_other_status": 0
+    },
+    "ddg-results": {
+      "attempted": 13,
+      "http200": 7,
+      "errors_or_other_status": 6
+    },
+    "search-results": {
+      "attempted": 9,
+      "http200": 9,
+      "errors_or_other_status": 0
+    }
+  },
+  "limitations": [
+    "search snippets are not full-page verification",
+    "publicly visible service offers do not prove profitability",
+    "no posts or outreach sent"
+  ]
+}
