@@ -1,4 +1,8 @@
-# Ultimate Motors · Free Vehicle Discovery Gateway
+[一键创建免费 Render 部署](https://render.com/deploy?repo=https://github.com/gavingao202608-warren/warren1) · 先创建 Neon Free 并准备私密 DATABASE_URL，详见 [部署步骤](reports/DEPLOY_FREE.md)。
+
+独立公网部署见 [免费部署说明](reports/DEPLOY_FREE.md)。客户存储支持 PostgreSQL；原官网只读，咨询归独立站运营者。
+
+# Warren Vehicle Finder · Independent Discovery Gateway
 
 独立的公开库存数据层，面向 Google、Bing、ChatGPT Search 和能够读取公开网页的系统。项目不修改现有 ZopDealer 网站，不使用广告、付费 API、第三方平台上传或获客保证。
 
@@ -100,7 +104,7 @@ npm run sync-inventory
 
 `Vehicle`：id、stock_number、vin、year、make、model、trim、price_cad、mileage_km、body_style、drivetrain、transmission、engine、fuel_type、exterior_color、interior_color、accident_status、carfax_url、description、primary_image、image_urls、source_vehicle_url、availability、dealer_name、region、last_seen_at、updated_at。`availability` 额外支持 unknown，不把未提供状态猜为在售。
 
-`inquiries`：inquiry_id、session_id、vehicle_id、source、question、created_at、contact_method、contact_value、consent。匿名咨询允许不留联系方式；有 contact_value 必须明确 consent。
+`inquiries`：inquiry_id、session_id、vehicle_id、source、question、created_at、contact_method、contact_value、consent。匿名咨询允许不留联系方式；有 contact_value 必须明确 consent。新增 is_test 与 lead_status，客户数据可用 DATABASE_URL 存储在独立 PostgreSQL；公网部署不会自动发送咨询给源车商。
 
 `visits`：session_id、first_source、current_source、landing_page、vehicle_id、timestamp、限定 UTM campaign 字段。支持 google、bing、chatgpt、copilot、muse、facebook、instagram、xiaohongshu、autotrader、direct、unknown。匿名 HTTP-only session cookie 30 天。JavaScript tracking 不记录没有执行 JS 的 crawler 浏览量。
 

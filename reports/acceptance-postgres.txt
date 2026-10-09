@@ -1,0 +1,36 @@
+
+> warren-vehicle-finder@0.1.0 acceptance
+> tsx --import ./scripts/load-env.mjs scripts/acceptance.ts
+
+{"stock":"1084","year":2020,"make":"BMW","model":"M2","price":59999,"mileage":46376,"source_url":"https://www.ultimatemotor.ca/inventory/2020-bmw-m2-competition/139/"}
+{"stock":"113","year":2022,"make":"Mercedes-Benz","model":"GLE-Class","price":49699,"mileage":48350,"source_url":"https://www.ultimatemotor.ca/inventory/2022-mercedes-benz-gle-class-gle350/99/"}
+{"stock":"139","year":2023,"make":"Mazda","model":"CX-30","price":25995,"mileage":45017,"source_url":"https://www.ultimatemotor.ca/inventory/2023-mazda-cx-30-gs/125/"}
+{"stock":"142","year":2021,"make":"Audi","model":"S5","price":44995,"mileage":46282,"source_url":"https://www.ultimatemotor.ca/inventory/2021-audi-s5-technik/128/"}
+{"stock":"143","year":2019,"make":"Audi","model":"Q5","price":23995,"mileage":71674,"source_url":"https://www.ultimatemotor.ca/inventory/2019-audi-q5-progressiv/129/"}
+{"stock":"144","year":2022,"make":"Mercedes-Benz","model":"GLE-Class","price":60599,"mileage":41406,"source_url":"https://www.ultimatemotor.ca/inventory/2022-mercedes-benz-gle-class-gle-450/130/"}
+{"stock":"146","year":2026,"make":"Toyota","model":"Sienna","price":60499,"mileage":90,"source_url":"https://www.ultimatemotor.ca/inventory/2026-toyota-sienna-le-hybrid-awd/132/"}
+{"stock":"1948","year":2026,"make":"MINI","model":"Cooper","price":39899,"mileage":2175,"source_url":"https://www.ultimatemotor.ca/inventory/2026-mini-cooper-s/147/"}
+{"stock":"3113","year":2024,"make":"Mercedes-Benz","model":"CLA","price":39995,"mileage":19502,"source_url":"https://www.ultimatemotor.ca/inventory/2024-mercedes-benz-cla-250/153/"}
+{"stock":"3780","year":2014,"make":"Subaru","model":"Impreza","price":9299,"mileage":55595,"source_url":"https://www.ultimatemotor.ca/inventory/2014-subaru-impreza-2-0i-premium/155/"}
+{"stock":"4161","year":2015,"make":"Toyota","model":"4Runner","price":26699,"mileage":163744,"source_url":"https://www.ultimatemotor.ca/inventory/2015-toyota-4runner-limited/140/"}
+{"stock":"4932","year":2020,"make":"Mercedes-Benz","model":"GLC","price":27999,"mileage":79686,"source_url":"https://www.ultimatemotor.ca/inventory/2020-mercedes-benz-glc-300/151/"}
+{"stock":"5280","year":2023,"make":"Toyota","model":"Camry","price":31688,"mileage":17495,"source_url":"https://www.ultimatemotor.ca/inventory/2023-toyota-camry-se/154/"}
+{"stock":"5573","year":2024,"make":"Lexus","model":"IS","price":55288,"mileage":34567,"source_url":"https://www.ultimatemotor.ca/inventory/2024-lexus-is-350/145/"}
+{"stock":"5823","year":2019,"make":"Mercedes-Benz","model":"E-Class","price":49999,"mileage":59978,"source_url":"https://www.ultimatemotor.ca/inventory/2019-mercedes-benz-e-class-amg-e-53/152/"}
+{"stock":"7264","year":2019,"make":"Mercedes-Benz","model":"E-Class","price":41599,"mileage":106693,"source_url":"https://www.ultimatemotor.ca/inventory/2019-mercedes-benz-e-class-amg-e-53/148/"}
+{"stock":"7402","year":2022,"make":"Land Rover","model":"Defender","price":52955,"mileage":41011,"source_url":"https://www.ultimatemotor.ca/inventory/2022-land-rover-defender-s/142/"}
+{"stock":"7917","year":2013,"make":"Ford","model":"Fusion","price":9999,"mileage":73590,"source_url":"https://www.ultimatemotor.ca/inventory/2013-ford-fusion-se/144/"}
+{"stock":"8807","year":2023,"make":"Volkswagen","model":"Tiguan","price":29699,"mileage":25122,"source_url":"https://www.ultimatemotor.ca/inventory/2023-volkswagen-tiguan-comfortline-r-line-black/150/"}
+{"stock":"9170","year":2021,"make":"Mercedes-Benz","model":"Sprinter","price":44999,"mileage":40469,"source_url":"https://www.ultimatemotor.ca/inventory/2021-mercedes-benz-sprinter-2500/149/"}
+{"stock":"93","year":2023,"make":"Mercedes-Benz","model":"Metris","price":129995,"mileage":13311,"source_url":"https://www.ultimatemotor.ca/inventory/2023-mercedes-benz-metris-/79/"}
+┌─────────┬────────────────────────────┬────────┬────────────────────────────────────────────────────────────────────────────┐
+│ (index) │ test                       │ status │ detail                                                                     │
+├─────────┼────────────────────────────┼────────┼────────────────────────────────────────────────────────────────────────────┤
+│ 0       │ 'A — Source ingestion'     │ 'PASS' │ '21 source vehicles'                                                       │
+│ 1       │ 'B — Crawler initial HTML' │ 'PASS' │ '21 vehicle pages contain initial HTML facts'                              │
+│ 2       │ 'C — Structured data'      │ 'PASS' │ 'All imported pages parse'                                                 │
+│ 3       │ 'D — Feed/API'             │ 'PASS' │ 'JSON, CSV and API agree; 21 vehicles (empty is not ingestion validation)' │
+│ 4       │ 'E — Search'               │ 'PASS' │ 'Four searches return actual imported vehicles; closest results labeled'   │
+│ 5       │ 'F — Anonymous inquiry'    │ 'PASS' │ 'Anonymous inquiry created: 82386ff7-5c5e-4915-84aa-0f49a2d1c4d1'          │
+│ 6       │ 'Robots/sitemap'           │ 'PASS' │ 'Public crawl directives and dynamic sitemap respond'                      │
+└─────────┴────────────────────────────┴────────┴────────────────────────────────────────────────────────────────────────────┘

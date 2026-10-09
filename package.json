@@ -1,5 +1,5 @@
 {
-  "name": "ultimate-discovery-gateway",
+  "name": "warren-vehicle-finder",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,20 +13,23 @@
     "init": "tsx --import ./scripts/load-env.mjs scripts/init.ts",
     "predev": "npm run init",
     "prestart": "npm run init",
-    "test:integration": "tsx --import ./scripts/load-env.mjs scripts/integration.ts"
+    "test:integration": "tsx --import ./scripts/load-env.mjs scripts/integration.ts",
+    "start:hosted": "node scripts/hosted.mjs"
   },
   "dependencies": {
+    "@next/env": "16.4.0",
     "cheerio": "1.2.0",
     "next": "16.4.0",
+    "pg": "^8.23.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "robots-parser": "^3.0.1",
-    "undici": "^8.11.2",
-    "@next/env": "16.4.0"
+    "undici": "^8.11.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.0",
     "@types/node": "^24.0.0",
+    "@types/pg": "^8.23.1",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "tailwindcss": "^4.1.0",

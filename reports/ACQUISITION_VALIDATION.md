@@ -1,3 +1,5 @@
+> 更新：环境配置发布后，Google、OpenAI、Render、Neon 官方资料已能读取；旧的出口访问阻碍不再适用于这些资料。当前独立版已完成 PostgreSQL 客户存储和免费部署配置，见 INDEPENDENT_DELIVERY_RESULT.md、DEPLOY_FREE.md。以下保留早期尝试记录。
+
 # 获客验证交付记录 — 2026-10-09
 
 ## 结果

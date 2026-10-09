@@ -1,0 +1,18 @@
+
+> warren-vehicle-finder@0.1.0 test:integration
+> tsx --import ./scripts/load-env.mjs scripts/integration.ts
+
+┌─────────┬────────────────────────────────────────────────────────────────────────────────┬────────┐
+│ (index) │ name                                                                           │ status │
+├─────────┼────────────────────────────────────────────────────────────────────────────────┼────────┤
+│ 0       │ 'Googlebot, Bingbot and OAI-SearchBot see server-rendered vehicle facts'       │ 'PASS' │
+│ 1       │ 'Vehicle and inquiry values are persisted in the configured customer database' │ 'PASS' │
+│ 2       │ 'Cross-origin inquiry and tracking submissions are refused'                    │ 'PASS' │
+│ 3       │ 'Unknown vehicle and invalid consent are rejected'                             │ 'PASS' │
+│ 4       │ 'Tracking preserves first source across internal landing changes'              │ 'PASS' │
+│ 5       │ 'Public feeds omit unavailable inventory and include stable URLs'              │ 'PASS' │
+│ 6       │ 'Source parameter works on ask; no account or compulsory contact'              │ 'PASS' │
+│ 7       │ 'No exact match is clearly labeled in initial search HTML'                     │ 'PASS' │
+│ 8       │ 'Admin requires signed authentication; dashboard displays real counts'         │ 'PASS' │
+│ 9       │ 'Admin login throttles repeated failures'                                      │ 'PASS' │
+└─────────┴────────────────────────────────────────────────────────────────────────────────┴────────┘

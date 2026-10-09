@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-09T15:06:27.464Z",
+  "health": {
+    "status": "ok",
+    "inventory_count": 21,
+    "customer_storage": "postgresql"
+  },
+  "automatic_host_url": "PASS",
+  "scope": "Hosted start command validated locally with real PostgreSQL; no Render account deployment yet"
+}

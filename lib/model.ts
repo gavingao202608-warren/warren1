@@ -6,5 +6,5 @@ export const title=(v:Vehicle)=>(v.make&&v.model?[v.year,v.make,v.model,v.trim].
 export const money=(n:number|null)=>n===null?'Not provided':new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(n)+' CAD';
 export const mileage=(n:number|null)=>n===null?'Not provided':n.toLocaleString('en-CA')+' km';
 export const slug=(v:Vehicle)=>v.id;
-export const base=()=> (process.env.PUBLIC_BASE_URL || 'http://localhost:3000').replace(/\/$/,'');
+export const base=()=> (process.env.PUBLIC_BASE_URL || process.env.RENDER_EXTERNAL_URL || 'http://localhost:3000').replace(/\/$/,'');
 export const vehicleUrl=(v:Vehicle)=>base()+'/v/'+encodeURIComponent(slug(v));

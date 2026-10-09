@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T14:12:58.906Z",
+  "timestamp": "2026-10-09T15:09:36.777Z",
   "inventory_count": 21,
   "checks": [
     {
@@ -7,7 +7,7 @@
       "status": "PASS"
     },
     {
-      "name": "Vehicle and inquiry values are persisted in the current SQLite database",
+      "name": "Vehicle and inquiry values are persisted in the configured customer database",
       "status": "PASS"
     },
     {

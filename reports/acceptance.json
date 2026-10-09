@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-09T14:13:00.158Z",
-  "base": "http://localhost:3000",
+  "timestamp": "2026-10-09T15:06:27.374Z",
+  "base": "http://localhost:3002",
   "source_vehicles": 21,
   "results": [
     {
@@ -31,7 +31,7 @@
     {
       "test": "F — Anonymous inquiry",
       "status": "PASS",
-      "detail": "Anonymous inquiry created: d2cf8f38-eca1-42ad-9a8a-2323d5e8b7e4"
+      "detail": "Anonymous inquiry created: 7927ccd6-7bd8-42ed-8223-35d147b8f7f0"
     },
     {
       "test": "Robots/sitemap",
