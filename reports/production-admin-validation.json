@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-09T16:40:41.447Z",
+  "origin": "https://warren-vehicle-finder.onrender.com",
+  "checks": {
+    "production_admin_login": "PASS",
+    "authenticated_dashboard": "PASS",
+    "marked_test_saved_to_production": "PASS",
+    "test_visible_after_independent_request": "PASS",
+    "test_status_update": "PASS",
+    "test_cannot_be_qualified": "PASS",
+    "cross_origin_update_rejected": "PASS",
+    "own_test_deleted": "PASS",
+    "own_test_absent_after_delete": "PASS"
+  },
+  "acquisition_counts": {
+    "inquiries": 0,
+    "contactable": 0,
+    "qualified": 0
+  },
+  "status": "PASS",
+  "restart_persistence": "NOT_TESTED"
+}
