@@ -14,17 +14,21 @@
     "predev": "npm run init",
     "prestart": "npm run init",
     "test:integration": "tsx --import ./scripts/load-env.mjs scripts/integration.ts",
-    "start:hosted": "node scripts/hosted.mjs"
+    "start:hosted": "node scripts/hosted.mjs",
+    "submit:indexnow": "tsx --import ./scripts/load-env.mjs scripts/indexnow.ts"
   },
   "dependencies": {
     "@next/env": "16.4.0",
+    "@tanstack/react-table": "8.21.3",
     "cheerio": "1.2.0",
+    "fuse.js": "^7.5.0",
     "next": "16.4.0",
     "pg": "^8.23.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "robots-parser": "^3.0.1",
-    "undici": "^8.11.2"
+    "undici": "^8.11.2",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.0",

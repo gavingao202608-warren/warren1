@@ -1,3 +1,4 @@
+import Fuse from 'fuse.js';
 import type {Vehicle} from './model';
 import {driveCode} from './drivetrain';
 export interface Filters {year?:number;minYear?:number;maxPrice?:number;maxMileage?:number;drivetrain?:string;terms:string[]}
@@ -7,8 +8,9 @@ export function parseSearch(query:string):Filters{
  const drive=s.match(/\b(awd|4wd|fwd|rwd)\b/);if(drive){f.drivetrain=drive[0];s=s.replace(drive[0],' ');}
  f.terms=s.replace(/[^a-z0-9 -]/g,' ').split(/\s+/).filter(t=>t&&!['and','a','car','vehicle','used','with','for'].includes(t));return f;
 }
-export function search(inventory:Vehicle[],query:string){const filters=parseSearch(query);const fits=(v:Vehicle)=>{
- const body=(v.body_style||'').toLowerCase();const text=[v.make,v.model,v.trim,body,/sport utility|suv|crossover/.test(body)?'suv':''].join(' ').toLowerCase();return (!filters.year||v.year===filters.year)&&(!filters.minYear||(v.year!==null&&v.year>=filters.minYear))&&(filters.maxPrice===undefined||(v.price_cad!==null&&v.price_cad<=filters.maxPrice))&&(filters.maxMileage===undefined||(v.mileage_km!==null&&v.mileage_km<=filters.maxMileage))&&(!filters.drivetrain||driveCode(v.drivetrain)===filters.drivetrain)&&filters.terms.every(t=>text.includes(t));};
- const exact=inventory.filter(fits);const score=(v:Vehicle)=>filters.terms.reduce((n,t)=>n+([v.make,v.model,v.trim,v.body_style].join(' ').toLowerCase().includes(t)?10:0),0)+(filters.drivetrain&&driveCode(v.drivetrain)===filters.drivetrain?5:0)-(filters.year&&v.year?Math.abs(v.year-filters.year):0);
- return {filters,exact:exact.length>0||!query.trim(),results:exact.length?exact:[...inventory].sort((a,b)=>score(b)-score(a)).slice(0,6)};
+export function search(inventory:Vehicle[],query:string){const filters=parseSearch(query);const fits=(v:Vehicle,matchTerms=true)=>{
+ const body=(v.body_style||'').toLowerCase();const text=[v.make,v.model,v.trim,body,/sport utility|suv|crossover/.test(body)?'suv':''].join(' ').toLowerCase();return (!filters.year||v.year===filters.year)&&(!filters.minYear||(v.year!==null&&v.year>=filters.minYear))&&(filters.maxPrice===undefined||(v.price_cad!==null&&v.price_cad<=filters.maxPrice))&&(filters.maxMileage===undefined||(v.mileage_km!==null&&v.mileage_km<=filters.maxMileage))&&(!filters.drivetrain||driveCode(v.drivetrain)===filters.drivetrain)&&(!matchTerms||filters.terms.every(t=>text.includes(t)));};
+ const exact=inventory.filter(v=>fits(v));const score=(v:Vehicle)=>filters.terms.reduce((n,t)=>n+([v.make,v.model,v.trim,v.body_style].join(' ').toLowerCase().includes(t)?10:0),0)+(filters.drivetrain&&driveCode(v.drivetrain)===filters.drivetrain?5:0)-(filters.year&&v.year?Math.abs(v.year-filters.year):0);
+ const eligible=inventory.filter(v=>fits(v,false));const fuzzy=filters.terms.length?new Fuse(eligible.map(v=>({vehicle:v,search_text:[v.make,v.model,v.trim,v.body_style,/sport utility|suv|crossover/i.test(v.body_style||'')?'suv':''].join(' ')})),{keys:['search_text'],ignoreLocation:true,threshold:0.35}).search({$and:filters.terms.map(term=>({search_text:term}))}).map(x=>x.item.vehicle).slice(0,6):[];
+ return {filters,match_type:exact.length?'exact':fuzzy.length?'fuzzy':'closest',exact:exact.length>0||!query.trim(),results:exact.length?exact:fuzzy.length?fuzzy:[...inventory].sort((a,b)=>score(b)-score(a)).slice(0,6)};
 }

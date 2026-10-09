@@ -57,3 +57,25 @@ test('hosted canonical base uses the actual Render URL and allows an explicit cu
  try{delete process.env.PUBLIC_BASE_URL;process.env.RENDER_EXTERNAL_URL='https://hosted-validation.example/';assert.equal(base(),'https://hosted-validation.example');process.env.PUBLIC_BASE_URL='https://custom-validation.example/';assert.equal(base(),'https://custom-validation.example');}
  finally{if(priorBase===undefined)delete process.env.PUBLIC_BASE_URL;else process.env.PUBLIC_BASE_URL=priorBase;if(priorRender===undefined)delete process.env.RENDER_EXTERNAL_URL;else process.env.RENDER_EXTERNAL_URL=priorRender;}
 });
+
+import {inquirySchema} from '../lib/inquiry-schema';
+test('open-source fuzzy search handles spelling mistakes without relaxing numeric filters',()=>{
+ const good=fixture({id:'eligible',price_cad:20000,mileage_km:40000});const tooExpensive=fixture({id:'expensive',price_cad:40000});const old=fixture({id:'old',year:2018,price_cad:10000});
+ const found=search([tooExpensive,old,good],'2022 ravv4 under 25000');assert.equal(found.match_type,'fuzzy');assert.equal(found.exact,false);assert.deepEqual(found.results.map(v=>v.id),['eligible']);
+});
+test('inquiry schema rejects forged consent, malformed contacts, and validation flags',()=>{
+ assert.equal(inquirySchema.safeParse({question:'Question',consent:'true'}).success,false);
+ assert.equal(inquirySchema.safeParse({question:'Question',contact_method:'Email',contact_value:'invalid',consent:true}).success,false);
+ assert.equal(inquirySchema.safeParse({question:'Question',contact_method:'Phone',contact_value:'letters 1234567',consent:true}).success,false);
+ assert.equal(inquirySchema.safeParse({question:'Question',is_test:true}).success,false);
+ assert.equal(inquirySchema.safeParse({question:'Question',contact_method:'Email',contact_value:'buyer@example.com',consent:true}).success,true);
+});
+
+import {indexNowBody} from '../lib/indexnow';
+test('IndexNow submits only owned public URLs, never the source dealer site',()=>{
+ const key='a'.repeat(48);const out=indexNowBody('https://our-independent.example',key,['https://our-independent.example/v/1','https://our-independent.example/v/1']);assert.equal(out.urlList.length,1);
+ assert.throws(()=>indexNowBody('https://our-independent.example',key,['https://ultimatemotor.ca/inventory/']));
+ assert.throws(()=>indexNowBody('https://ultimatemotor.ca',key,['https://ultimatemotor.ca/']));
+ assert.throws(()=>indexNowBody('http://localhost:3000',key,['http://localhost:3000/']));
+ assert.throws(()=>indexNowBody('https://our-independent.example','bad',['https://our-independent.example/']));
+});

@@ -1,1 +1,1 @@
-import {cookies} from 'next/headers';import {sameOrigin} from '@/lib/security';export async function POST(req:Request){if(!sameOrigin(req))return new Response(null,{status:403});(await cookies()).delete('um_admin');return Response.redirect(new URL('/admin',req.url),303);}
+import {cookies} from 'next/headers';import {sameOrigin} from '@/lib/security';export async function POST(req:Request){if(!sameOrigin(req))return new Response(null,{status:403});(await cookies()).delete('um_admin');return Response.redirect(new URL('/admin',req.headers.get('origin')!),303);}

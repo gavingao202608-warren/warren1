@@ -1,3 +1,5 @@
+独立站公网地址：[Warren Vehicle Finder](https://warren-vehicle-finder.onrender.com)。
+
 [一键创建免费 Render 部署](https://render.com/deploy?repo=https://github.com/gavingao202608-warren/warren1) · 先创建 Neon Free 并准备私密 DATABASE_URL，详见 [部署步骤](reports/DEPLOY_FREE.md)。
 
 独立公网部署见 [免费部署说明](reports/DEPLOY_FREE.md)。客户存储支持 PostgreSQL；原官网只读，咨询归独立站运营者。
@@ -162,3 +164,5 @@ OpenAI：保持 API key 可选，读取当前 Vehicle，只回答已知事实，
 - 原站 search 配置、字段或 key 可能变化；严格验证会暂停同步并保留旧库存，而不是猜测。
 - 事故历史未独立核验；CARFAX 链接存在不等于没有事故。
 - 咨询仅入库、admin 可见，没有 email/SMS 通知，没有真实客户转化证明。
+
+开源复用和许可证见 [THIRD_PARTY.md](THIRD_PARTY.md)，筛选记录见 [OPEN_SOURCE_RESEARCH.md](reports/OPEN_SOURCE_RESEARCH.md)。搜索 URL 自动提交遵循 IndexNow，只发送独立站公开 URL，不发送客户咨询；HTTP 接收成功不保证收录。

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-09T16:04:57.106Z",
+  "status": "PASS",
+  "scope": "Local production with real PostgreSQL; synthetic TEST inquiry only",
+  "filtering": true,
+  "per_row_status_persisted": true,
+  "tests_cannot_qualify": true,
+  "per_row_deletion": true,
+  "redirect_stays_on_origin": true,
+  "test_inquiry_deleted": "d0e37dbd-cbf0-4c08-80bb-85228f99ae95"
+}
