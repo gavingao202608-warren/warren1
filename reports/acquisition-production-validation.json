@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-10-09T17:02:07.733Z",
+  "origin": "https://warren-vehicle-finder.onrender.com",
+  "checks": {
+    "admin_login": "PASS",
+    "marked_test_created_before_deployment": "PASS",
+    "public_budget_and_no_false_match": "PASS",
+    "new_acquisition_pages_deployed": "PASS",
+    "marked_record_survived_actual_new_deployment": "PASS",
+    "/compare_public_200": "PASS",
+    "/guides/ontario-car-price_public_200": "PASS",
+    "sitemap_includes_original_pages": "PASS",
+    "own_test_deleted": "PASS",
+    "own_test_cleanup_confirmed": "PASS"
+  },
+  "budget_status_before_deploy": 404,
+  "acquisition_counts": {
+    "inquiries": 0,
+    "contactable": 0,
+    "qualified": 0
+  },
+  "sitemap_url_count": 26,
+  "status": "PASS",
+  "finished_at": "2026-10-09T17:04:46.022Z"
+}
