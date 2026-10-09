@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-09T15:49:08.246Z",
+  "url": "https://warren-vehicle-finder.onrender.com",
+  "checks": {
+    "homepage_independent_brand": "PASS",
+    "inventory_count": 21,
+    "postgresql_health": "PASS",
+    "runtime_sitemap_origin": "PASS",
+    "robots": "PASS",
+    "vehicle_html_with_simulated_OAI_user_agent": "PASS",
+    "canonical_and_source_offer_url": "PASS",
+    "inquiry_recipient_disclosure": "PASS",
+    "unauthenticated_admin_no_customer_records": "PASS"
+  },
+  "not_verified": [
+    "Actual search engine crawling or indexing",
+    "Actual customer acquisition",
+    "Public inquiry write and restart checked with owner authentication",
+    "Cold-start latency"
+  ],
+  "real_verified_leads": 0
+}
