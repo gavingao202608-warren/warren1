@@ -6,3 +6,10 @@
 - IndexNow Action — https://github.com/bojieyang/indexnow-action at 38ddfbd93579a8a44c0dee662121bf9d51098f71 (v3.0.0) — MIT. Its request-construction approach is adapted in lib/indexnow.ts with strict independent-origin checks. The full GitHub Action is not installed; submission runs in the existing app process after inventory sync and skips unchanged sitemap/deployment signatures. Original license retained in licenses/IndexNow-Action-MIT.txt.
 
 These components do not change the source dealer website. IndexNow transmits only public URLs and the public site-verification key, never buyer inquiries or contacts. Other existing package licenses remain in their npm distributions.
+
+## PapaParse
+
+- Repository: https://github.com/mholt/PapaParse
+- Used for administrator-side CSV preview of authorized incoming inquiry exports.
+- MIT license retained in `licenses/PapaParse-MIT.txt`; installed version pinned in package.json/package-lock.json.
+- CSV parsing does not establish platform integration, data provenance, permission, buyer intent or sales effectiveness.

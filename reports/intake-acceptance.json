@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-13T14:33:13.931Z",
+  "scope": "local production HTTP and configured customer database; controlled TEST fixtures deleted",
+  "checks": [
+    {
+      "name": "Buyer request stores useful context, consent and TEST attribution without auto-qualification",
+      "status": "PASS"
+    },
+    {
+      "name": "Buyer requests reject cross-origin, string consent and forged TEST fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Lead intake is private and import requires authenticated same-origin admin",
+      "status": "PASS"
+    },
+    {
+      "name": "Import rejects batches with missing permission before writing",
+      "status": "PASS"
+    },
+    {
+      "name": "Authorized TEST import is repeat-safe and remains unqualified",
+      "status": "PASS"
+    },
+    {
+      "name": "Public feeds do not expose inquiry contacts or import evidence",
+      "status": "PASS"
+    }
+  ]
+}

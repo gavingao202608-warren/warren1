@@ -1,0 +1,56 @@
+
+> warren-vehicle-finder@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.4.0 (webpack)
+- Environments: .env.local
+✓ Running next.config.ts took 25ms
+- Experiments (use with caution):
+  · cpus: 2
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.5s
+  Running TypeScript ...
+  Finished TypeScript in 1691ms ...
+  Collecting page data using 2 workers ...
+  Generating static pages using 2 workers (0/10) ...
+  Generating static pages using 2 workers (2/10) 
+  Generating static pages using 2 workers (4/10) 
+  Generating static pages using 2 workers (7/10) 
+✓ Generating static pages using 2 workers (10/10) in 387ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /admin
+├ ƒ /admin/intake
+├ ƒ /api/admin/import-leads
+├ ƒ /api/admin/lead
+├ ƒ /api/admin/login
+├ ƒ /api/admin/logout
+├ ƒ /api/admin/sync
+├ ƒ /api/admin/test-inquiry
+├ ƒ /api/buyer-requests
+├ ƒ /api/health
+├ ƒ /api/inquiries
+├ ƒ /api/track
+├ ƒ /api/vehicles
+├ ƒ /api/vehicles/[stock]
+├ ƒ /ask
+├ ƒ /budget
+├ ƒ /compare
+├ ƒ /feed/inventory.csv
+├ ƒ /feed/inventory.json
+├ ƒ /guides/ontario-car-price
+├ ƒ /interest
+├ ƒ /inventory
+├ ƒ /privacy
+├ ƒ /robots.txt
+├ ƒ /sitemap.xml
+└ ƒ /v/[stock]
+
+
+ƒ  (Dynamic)  server-rendered on demand
+

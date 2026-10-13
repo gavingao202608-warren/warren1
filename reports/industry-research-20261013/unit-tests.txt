@@ -1,0 +1,60 @@
+
+> warren-vehicle-finder@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ Ontario listing example makes tax and entered costs explicit (2.673483ms)
+✔ backward allowance stays within budget, with optional and licensing costs (0.63939ms)
+✔ invalid amounts cannot produce plausible budget results (0.504159ms)
+✔ buyer interest captures useful self-reported context without claiming verification (5.203906ms)
+✔ buyer requests reject forged consent, test flags, invalid contact and ambiguous numeric inputs (1.599052ms)
+✔ import requires operator authorization and individual consent evidence (4.671262ms)
+✔ CSV parser preserves quoted commas and line breaks, rejects malformed rows (2.948472ms)
+✔ maximum import metadata stays bounded and identifies operator evidence (0.98775ms)
+✔ vehicle parser reads source structured facts (17.521012ms)
+✔ price parser rejects finance, missing, negative and malformed prices (0.431602ms)
+✔ mileage parser handles km without silently treating miles as km (0.21751ms)
+✔ stock/VIN parsing validates VIN characters (0.195122ms)
+✔ parser leaves absent fields unknown (3.04624ms)
+✔ parser rejects listing and unrelated product pages (2.1745ms)
+✔ parser reads table specifications and explicit availability (3.724781ms)
+✔ non-CAD price is not advertised as CAD (1.642526ms)
+✔ unsafe image URLs are discarded (1.374055ms)
+✔ search parses year, model, trim, drive, budget and mileage (1.354835ms)
+✔ requested searches return actual supplied inventory or labeled closest results (3.795619ms)
+✔ unknown price and mileage cannot satisfy numeric constraints (0.242356ms)
+✔ JSON feed includes only available inventory and source URLs (0.385517ms)
+✔ CSV quotes fields, retains zero, and mitigates spreadsheet formulas (0.366269ms)
+✔ vehicle structured data parses and omits nonexistent accident facts (0.51887ms)
+✔ sitemap includes available VDPs, excludes missing and sold (0.158908ms)
+✔ inventory add/update preserves last_seen and updates changed facts (0.656662ms)
+✔ inquiry save records anonymous vehicle/source/question/timestamp (20.770132ms)
+✔ inquiry validation rejects unknown vehicle and unconsented contact (0.531293ms)
+✔ partial and failed sync cannot remove inventory (0.503612ms)
+✔ three complete missing observations mark unavailable and reappearance restores (0.824008ms)
+✔ missing evidence set protects inventory omitted by discovery (0.270817ms)
+✔ sync failure logs error and keeps previously valid database (5.964385ms)
+✔ source HTTP accepts only authorized HTTPS hosts (0.120312ms)
+✔ tracking recognizes explicit UTM and trusted referrer hostname (0.559327ms)
+✔ admin disabled without password; tampering and expiry fail (0.565921ms)
+✔ rate limit and same-origin check block abuse (1.742885ms)
+✔ public Zop adapter maps visible facts and nullable history (4.496846ms)
+✔ drivetrain aliases from real source vocabulary match AWD searches (0.276085ms)
+✔ published search configuration is parsed as data, never evaluated (0.4183ms)
+✔ same-origin validation honors the actual HTTP host through Next binding (0.478143ms)
+✔ JSON-LD serializer prevents closing script injection and preserves JSON data (0.277838ms)
+✔ request decoder rejects oversized and non-JSON bodies (4.148608ms)
+✔ search normalizes source body style vocabulary and does not mistake five-digit budget for year (0.658151ms)
+✔ source attribution rejects spoofed Google domains and recognizes Copilot (0.248754ms)
+✔ qualified leads require a real consented contact and exclude controlled tests (0.150825ms)
+✔ hosted canonical base uses the actual Render URL and allows an explicit custom domain (0.103267ms)
+✔ open-source fuzzy search handles spelling mistakes without relaxing numeric filters (0.301647ms)
+✔ inquiry schema rejects forged consent, malformed contacts, and validation flags (3.345078ms)
+✔ IndexNow submits only owned public URLs, never the source dealer site (0.766127ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 763.69501

@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-13T14:32:44.205Z",
+  "scope": "local Chromium end-to-end form and CSV UI, controlled TEST records only",
+  "checks": {
+    "mobile_no_overflow": true,
+    "consent_not_prechecked": true,
+    "buyer_form_saved": true,
+    "no_fake_booking": true,
+    "private_console_rendered": true,
+    "csv_preview": true,
+    "csv_import": true
+  },
+  "status": "PASS"
+}
