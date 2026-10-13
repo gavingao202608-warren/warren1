@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-13T14:40:16.144Z",
+  "status": 200,
+  "elapsed_ms": 285,
+  "health": {
+    "status": "ok",
+    "inventory_count": 21,
+    "customer_storage": "postgresql"
+  },
+  "initial_timeout_cause": "NOT_CONFIRMED"
+}

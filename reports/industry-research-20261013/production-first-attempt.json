@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-10-13T14:36:17.104Z",
+  "origin": "https://warren-vehicle-finder.onrender.com",
+  "checks": {},
+  "status": "FAIL",
+  "error": "The operation was aborted due to timeout",
+  "finished_at": "2026-10-13T14:37:47.112Z"
+}
